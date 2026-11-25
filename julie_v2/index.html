@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff0f4">
+<title>Julie — une petite surprise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a1"></div><div class="ambient a2"></div>
+<header class="top"><a class="logo" href="#" aria-label="Accueil">J<span>♡</span></a><div class="top-right"><span>UNE PETITE EXPÉRIENCE SIGNÉE N.</span><button id="sound" class="sound">♫ <span>Ambiance</span></button></div></header>
+<div class="progress"><i id="progress"></i></div>
+<main>
+<section class="page active" id="p0">
+ <div class="hero">
+  <div class="sparkle">✦ &nbsp; ✧ &nbsp; ✦</div><p class="kicker">UN SITE QUI N'ÉTAIT PAS PRÉVU AU PROGRAMME</p>
+  <h1>Julie,<br><em>j'ai une surprise.</em></h1>
+  <p class="hero-copy">Je ne sais pas encore grand-chose de toi. Alors plutôt que de faire semblant, j'ai préparé un petit parcours pour qu'on fasse connaissance… à ta façon.</p>
+  <div class="hero-sign">Prends ton temps. Et méfie-toi des boutons. <span>— Nathan</span></div>
+  <button class="btn primary" id="startVideo">Lancer la surprise <b>↗</b></button>
+  <div class="scroll-hint">UNE PETITE SURPRISE T'ATTEND <span>↓</span></div>
+ </div>
+</section>
+
+<section class="page" id="p1">
+ <div class="sheet video-sheet">
+  <p class="kicker">BON, ON COMMENCE PAR ÇA</p><h2>Une petite pause<br><em>avant les questions.</em></h2>
+  <p class="sub">Regarde jusqu'au bout. Je ne dirai rien… pour le moment.</p>
+  <div class="video-frame"><div class="video-glow"></div><video id="introVideo" controls playsinline preload="metadata"><source src="assets/moment-de-pause.mp4" type="video/mp4"></video><span class="video-tag">10 SECONDES DE SUSPENSE</span></div>
+  <div class="hand">Voilà. Maintenant que tu es dans l'ambiance… on peut parler de toi.</div>
+  <div class="nav"><button class="btn ghost back">← Revoir le début</button><button class="btn primary next">Je suis prête, je crois <b>→</b></button></div>
+ </div>
+</section>
+
+<section class="page" id="p2">
+ <div class="sheet">
+  <p class="kicker">01 — PETITE PRÉSENTATION</p><h2>Qui se cache<br><em>derrière Julie ?</em></h2>
+  <p class="sub">Promis, ce n'est pas un interrogatoire. Tu peux passer une question si tu préfères garder le mystère.</p>
+  <label>Tu as des origines d'où ?</label><input data-key="origines" placeholder="Un pays, plusieurs, un joli mélange…">
+  <label>Tu as grandi où ?</label><input data-key="origineVille" placeholder="Ville, région, ailleurs…">
+  <label>Tu as des frères et sœurs ?</label><div class="choices" data-key="fratrie"><button>Fille unique</button><button>Un frère</button><button>Une sœur</button><button>Plusieurs frères et sœurs</button><button>Je garde le suspense</button></div>
+  <label>Et dans la famille, tu es plutôt…</label><div class="choices" data-key="placeFamille"><button>L'aînée</button><button>La petite dernière</button><button>Au milieu</button><button>Ça dépend des jours 😇</button></div>
+  <label>Trois mots pour te décrire ?</label><input data-key="troisMots" placeholder="Spontanée, drôle, réservée…">
+  <div class="nav"><button class="btn ghost back">← Retour</button><button class="btn primary next">Suivant <b>→</b></button></div>
+ </div>
+</section>
+
+<section class="page" id="p3">
+ <div class="sheet">
+  <p class="kicker">02 — LES PETITS DÉTAILS</p><h2>Ta personnalité,<br><em>version vraie.</em></h2>
+  <label>Tu es plutôt…</label><div class="choices multi" data-key="personnalite"><button>Calme, mais pas tout le temps</button><button>Très sociable</button><button>Timide au début</button><button>Un peu imprévisible</button><button>Un mélange de tout ça</button></div>
+  <label>Ta couleur préférée ? (choisis-en plusieurs si tu veux)</label><div class="palette multi" data-key="couleurs">
+   <button><i style="background:#171719"></i>Noir</button><button><i style="background:#fff;border:1px solid #ddd"></i>Blanc</button><button><i style="background:#92949a"></i>Gris</button><button><i style="background:#5a86c5"></i>Bleu</button><button><i style="background:#ee9ebd"></i>Rose</button><button><i style="background:#c74751"></i>Rouge</button><button><i style="background:#5c9b75"></i>Vert</button>
+  </div>
+  <label>Qu'est-ce qui te met instantanément de bonne humeur ?</label><textarea data-key="bonneHumeur" placeholder="Une chanson, une personne, un endroit, un petit rien…"></textarea>
+  <label>Ton dimanche parfait ?</label><div class="choices" data-key="dimanche"><button>Cocooning à la maison</button><button>Sortie improvisée</button><button>Famille / amis</button><button>Un peu de tout</button><button>Ça dépend de l'humeur</button></div>
+  <div class="nav"><button class="btn ghost back">← Retour</button><button class="btn primary next">Suivant <b>→</b></button></div>
+ </div>
+</section>
+
+<section class="page" id="p4">
+ <div class="sheet">
+  <p class="kicker">03 — TA VIE, TES ENVIES</p><h2>Et en dehors<br><em>des jolies photos ?</em></h2>
+  <label>Tu travailles dans l'événementiel : qu'est-ce qui te plaît le plus dans ce domaine ?</label><textarea data-key="evenementiel" placeholder="L'organisation, la créativité, les rencontres, l'ambiance…"></textarea>
+  <label>Tu as un projet qui te tient particulièrement à cœur ?</label><textarea data-key="projetCoeur" placeholder="Professionnel ou personnel…"></textarea>
+  <label>Quand tu imagines ta vie dans 5 ans, tu te vois où ?</label><textarea data-key="dans5ans" placeholder="Un métier, une ville, des voyages, une vie de famille…"></textarea>
+  <label>Le rêve que tu aimerais vraiment réaliser un jour ?</label><input data-key="reve" placeholder="Même un rêve un peu fou.">
+  <div class="note">Petite parenthèse sur moi : je travaille dans la cybersécurité, mais j'ai aussi touché un peu au développement web. Alors qui sait… avec quelqu'un qui connaît l'événementiel, je pourrais peut-être créer des sites pour de beaux projets. Une future collaboration ? 👀</div>
+  <div class="nav"><button class="btn ghost back">← Retour</button><button class="btn primary next">Suivant <b>→</b></button></div>
+ </div>
+</section>
+
+<section class="page" id="p5">
+ <div class="sheet">
+  <p class="kicker">04 — LE PROGRAMME IDÉAL</p><h2>Si on avait<br><em>une journée libre…</em></h2>
+  <p class="sub">Sélectionne toutes les activités qui te tentent. Je prends des notes pour les futures idées de sorties.</p>
+  <div class="activity-grid multi" data-key="activites">
+   <button class="activity"><span>01 / DÉCOUVERTE</span><b>Un aquarium</b><small>Un monde sous l'eau, tranquille et joli.</small></button>
+   <button class="activity"><span>02 / CULTURE</span><b>Un musée ou une expo</b><small>Découvrir quelque chose et en parler après.</small></button>
+   <button class="activity"><span>03 / GOURMAND</span><b>Un restaurant</b><small>Tester une bonne adresse, évidemment.</small></button>
+   <button class="activity"><span>04 / FUN</span><b>Bowling / arcade</b><small>Avec un minimum de mauvaise foi si je perds.</small></button>
+   <button class="activity"><span>05 / GRAND AIR</span><b>Une balade</b><small>Marcher, discuter, prendre l'air.</small></button>
+   <button class="activity"><span>06 / CRÉATIF</span><b>Atelier / expérience</b><small>Cuisine, peinture, poterie… à découvrir.</small></button>
+   <button class="activity"><span>07 / SPECTACLE</span><b>Concert / spectacle</b><small>Une belle ambiance et des souvenirs.</small></button>
+   <button class="activity"><span>08 / SURPRISE</span><b>Tu choisis pour moi</b><small>Je te fais confiance… enfin presque.</small></button>
+  </div>
+  <label>Une activité que tu rêves de faire, même si elle n'est pas dans la liste ?</label><textarea data-key="activiteLibre" placeholder="Je suis ouvert aux propositions…"></textarea>
+  <label>Et pour une soirée tranquille ?</label><div class="choices" data-key="soiree"><button>Film / série</button><button>Discuter pendant des heures</button><button>Jeux / défis</button><button>Sortir sur un coup de tête</button><button>Selon l'humeur</button></div>
+  <div class="nav"><button class="btn ghost back">← Retour</button><button class="btn primary next">Suivant <b>→</b></button></div>
+ </div>
+</section>
+
+<section class="page" id="p6">
+ <div class="sheet">
+  <p class="kicker">05 — PETIT TEST DE COMPATIBILITÉ</p><h2>On vérifie<br><em>deux-trois choses.</em></h2>
+  <label>Pour voyager, tu es plutôt…</label><div class="choices" data-key="voyage"><button>Tout organiser</button><button>Partir à l'aventure</button><button>Un mélange des deux</button></div>
+  <label>Pour communiquer, tu préfères…</label><div class="choices" data-key="communication"><button>Messages toute la journée</button><button>Appels</button><button>Vocaux de 5 minutes 😭</button><button>Ça dépend de la personne</button></div>
+  <label>Qu'est-ce que tu apprécies le plus chez quelqu'un ?</label><div class="choices multi" data-key="qualites"><button>L'humour</button><button>La sincérité</button><button>L'attention</button><button>L'ambition</button><button>La douceur</button><button>La loyauté</button><button>La spontanéité</button></div>
+  <label>Un détail qui peut te faire craquer chez quelqu'un ?</label><input data-key="detailCraquant" placeholder="Je prends des notes, promis.">
+  <div class="hand">Certaines questions, je les garde pour une vraie conversation. C'est quand même mieux que de tout raconter derrière un écran.</div>
+  <div class="nav"><button class="btn ghost back">← Retour</button><button class="btn primary next">Suivant <b>→</b></button></div>
+ </div>
+</section>
+
+<section class="page" id="p7">
+ <div class="sheet">
+  <p class="kicker">06 — UNE OPTION, AUCUNE PRESSION</p><h2>Et si on se<br><em>voyait bientôt ?</em></h2>
+  <p class="sub">Je te propose une petite option facultative. Si tu en as envie, indique-moi quand tu aimerais qu'on se rencontre. Si tu préfères discuter encore avant, c'est très bien aussi.</p>
+  <div class="date-card">
+   <div class="date-icon">♡</div><p class="date-title">Ton timing idéal</p>
+   <div class="choices vertical" data-key="timing"><button>Dans les prochains jours</button><button>Dans les deux prochaines semaines</button><button>Le mois prochain</button><button>Quand nos agendas le permettront</button><button>Je préfère qu'on en reparle</button></div>
+   <label>Tu as une date en tête ? (facultatif)</label><input type="date" data-key="dateSouhaitee">
+   <label>Une période ou un jour qui t'arrange ?</label><input data-key="disponibilites" placeholder="Un week-end, après le travail…">
+   <label>Tu imagines plutôt quoi pour ce premier moment ?</label><div class="choices" data-key="premierRdv"><button>Un café / verre</button><button>Un resto</button><button>Une activité</button><button>Une balade</button><button>Surprise, propose-moi</button></div>
+  </div>
+  <div class="note">Aucune date limite pour répondre, aucune obligation de dire oui. C'est juste pour savoir ce qui te ferait plaisir.</div>
+  <div class="nav"><button class="btn ghost back">← Retour</button><button class="btn primary next">Encore une dernière page <b>→</b></button></div>
+ </div>
+</section>
+
+<section class="page" id="p8">
+ <div class="sheet finale">
+  <div class="big-heart">♡</div><p class="kicker">DERNIÈRE PAGE — PROMIS</p>
+  <h2>Julie, le plus<br><em>important reste à découvrir.</em></h2>
+  <p>Je t'ai dit que je travaillais dans la cybersécurité, mais tu as maintenant la preuve que je peux aussi faire autre chose qu'aligner des lignes de code. 😄</p>
+  <p>J'ai créé ce petit site pour sortir du classique « salut, ça va ? ». Je ne connais pas encore tes réponses, tes histoires, tes petites habitudes ou ce qui te fait rire. C'est justement ce qui rend la découverte intéressante.</p>
+  <p>Merci d'avoir joué le jeu. Et si tu as souri au moins une fois, le développeur considère que le projet est validé.</p>
+  <div class="signature">Nathan</div>
+  <div class="monkey-trap"><p class="kicker">PS : UN DERNIER TRUC…</p><h3>Il y a un bouton suspect.</h3><p>Je te conseille de ne pas cliquer. Vraiment. Il n'apporte absolument rien à ta vie.</p><button class="btn primary" id="monkeyBtn">Surtout ne pas cliquer 🙈</button><small id="monkeyHint">Je t'aurai prévenue.</small></div>
+  <div class="nav"><button class="btn ghost back">← Retour</button><button class="btn primary" id="showSummary">Voir mon récapitulatif <b>→</b></button></div>
+ </div>
+</section>
+
+<section class="page" id="p9">
+ <div class="sheet">
+  <p class="kicker">TON PETIT CARNET</p><h2>Les réponses<br><em>de Julie.</em></h2>
+  <p class="sub">Tu peux copier tes réponses et me les envoyer si tu en as envie. Rien n'est transmis automatiquement.</p>
+  <div id="summary" class="summary"></div>
+  <div class="nav"><button class="btn ghost" id="copy">Copier les réponses</button><button class="btn primary" id="restart">Recommencer ↻</button></div>
+  <p class="privacy">Tes réponses restent dans cette page pendant ta visite. Elles ne sont envoyées à aucun serveur.</p>
+ </div>
+</section>
+</main>
+<div class="toast" id="toast"></div>
+<div class="overlay" id="surprise" aria-hidden="true"><div class="popup"><button class="close" id="closePopup">×</button><p class="kicker">JE T'AVAIS PRÉVENUE.</p><img src="assets/singe-surprise.png" alt="Un chimpanzé fait un doigt d'honneur"><h2>Bon. On va dire que tu l'as cherché. 😭</h2><p>Allez, je plaisante. Merci d'avoir joué le jeu, Julie ♡</p><button class="btn primary" id="okPopup">Je retourne au calme</button></div></div>
+<script src="script.js"></script>
+</body></html>

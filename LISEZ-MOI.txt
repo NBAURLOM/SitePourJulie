@@ -1,0 +1,16 @@
+JULIE — SITE INTERACTIF
+
+Contenu :
+- index.html : structure et textes
+- style.css : design rose, animations et mise en page responsive
+- script.js : navigation par étapes, réponses, récapitulatif et surprises
+- assets/intro-julie.mp4 : vidéo d’introduction (environ 1 min 15)
+- assets/moment-de-pause.mp4 : courte vidéo « Moment de pause » (environ 10 secondes), accessible avec le bouton « Faire une pause » pendant le parcours
+- assets/singe-surprise.png : surprise du singe
+
+Tester :
+Décompresse le ZIP, puis ouvre index.html dans Chrome, Edge ou Firefox. Garde les fichiers et le dossier assets ensemble.
+
+La vidéo d’introduction est jouée au début. La courte vidéo « Moment de pause » est un interlude facultatif : le bouton « Faire une pause » reste disponible pendant les questions, puis « Reprendre les questions » permet de continuer au même endroit.
+
+Les réponses restent dans la page pendant la visite et ne sont envoyées à aucun serveur. La rencontre est facultative, sans deadline imposée.

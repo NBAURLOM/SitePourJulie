@@ -1,0 +1,21 @@
+JULIE — SITE INTERACTIF
+
+Contenu :
+- index.html : structure et textes
+- style.css : design rose, animations et mise en page responsive
+- script.js : navigation par étapes, réponses, récapitulatif et surprise
+- assets/moment-de-pause.mp4 : vidéo d'introduction fournie
+- assets/singe-surprise.png : surprise du singe fournie
+
+Tester :
+Décompresse le ZIP, puis ouvre index.html dans Chrome, Edge ou Firefox.
+Garde les fichiers et le dossier assets ensemble.
+
+Mettre en ligne avec GitHub Pages :
+1. Crée un dépôt GitHub public nommé par exemple julie-site.
+2. Ajoute tous les fichiers du dossier (index.html, style.css, script.js et assets).
+3. Dans Settings > Pages, choisis Deploy from a branch, puis main et /(root).
+4. GitHub donnera l'adresse du site.
+
+Les réponses sont conservées uniquement dans la page pendant la visite. Elles ne sont envoyées à aucun serveur.
+La date de rencontre est facultative : aucune pression ni deadline imposée.
